@@ -17,4 +17,9 @@ funcionalidades de um sistema bancário, conforme as regras abaixo.**
     - bairro
     - cidade
 
-Com exceção dos atributos `dataCadastro` e `enderecos`, os demais são obrigatórios ao instanciar a classe. 
+Com exceção dos atributos `dataCadastro` e `enderecos`, os demais são obrigatórios ao instanciar a classe.
+
+O atributo `dataCadastro` deverá receber a data atual no momento em que a classe é instanciada.
+
+A classe deverá implementar um método `adicionarEndereco` que recebe o endereço de acordo com os  
+atributos acima e adicione na lista de endereços.
