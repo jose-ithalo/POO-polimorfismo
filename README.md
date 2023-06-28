@@ -46,3 +46,22 @@ A classe deverá exigir que dois métodos sejam implementados em subclasses que 
 Não é necessário implementar os métodos na classe `ContaBancaria`, pois ela nunca poderá ser instanciada.  
 Ambas terão o saldo retornado da seguinte forma: `Saldo: R$ 123,45`
 
+3 - Implemente uma classe `ContaCorrente` que herda as características e funcionalidades da classe  
+`ContaBancaria`, com as seguintes particularidades:
+
+Deverá existir um atributo chamado `limite` que deverá receber um valor de `R$ 100,00` convertidos para  
+centavos, ao criar um objeto. Esse atributo deverá ser exclusivo da classe `ContaCorrente` e não poderá ser  
+acessado publicamente.
+
+Deverá implementar os métodos obrigatórios da superclasse, seguindo as seguintes regras:
+
+a) o método `depositar` deverá incrementar o valor recebido como argumento ao saldo do cliente e retornar  
+o saldo conforme solicitado anteriormente.
+
+b) o método `sacar` deverá seguir as seguintes obrigatoriedades:
+
+- Validar se a senha recebida como argumento é exatamente a mesma cadastrada para o cliente.
+- Verificar se o valor a ser sacado está disponível. O valor disponívels na conta corrente deve ser a soma do  
+  limite com o saldo do cliente.
+- Subtrair o valor recebido como argumento do saldo do usuário, caso as regras anteriores estejam  
+  validadas e retornar o saldo conforme solicitado anteriormente.
