@@ -1,19 +1,30 @@
+import { Cliente } from "./Cliente"
 
-export class ContaBacaria {
+type TContaBancaria = {
+    saldo: number
+    numero: number
+    agencia: number
+    senha: number
+    cliente: Cliente
+}
+
+export abstract class ContaBacaria {
 
     protected saldo: number
     public numero: number
     public agencia: number
     protected senha: number
-    public cliente: string
+    public cliente: Cliente
 
-    constructor(saldo: number, numero: number, agencia: number, senha: number, cliente: string) {
+    constructor(dadosConta: TContaBancaria) {
 
-        this.saldo = saldo;
-        this.numero = numero;
-        this.agencia = agencia;
-        this.senha = senha;
-        this.cliente = cliente;
+        this.saldo = dadosConta.saldo;
+        this.numero = dadosConta.numero;
+        this.agencia = dadosConta.agencia;
+        this.senha = dadosConta.senha;
+        this.cliente = dadosConta.cliente
+
+        //   Object.assign(this, dadosConta);
     }
 
     consultarSaldo(senha: number): string {
@@ -24,11 +35,11 @@ export class ContaBacaria {
 
         const valor: number = this.saldo / 100;
 
-        return `Saldo: RS ${valor.toFixed(2).replace('.', ',')}`;
+        return `Saldo: R$ ${valor.toFixed(2).replace('.', ',')}`;
     }
 
+    abstract depositar(): string;
+
+    abstract sacar(): string;
+
 }
-
-const marcio = new ContaBacaria(956790, 14578, 225, 1078, 'Márcio');
-
-console.log(marcio.consultarSaldo(1078));
