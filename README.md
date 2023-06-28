@@ -38,7 +38,7 @@ atributos acima e adicione na lista de endereços.
 O saldo informado obrigatóriamente representa o saldo inicial da conta do cliente.
 
 A classe deverá implementar um método `consultarSaldo`, que receba a senha e retornará o saldo no  
-formato `Saldo: RS 123,45` ou a mensagem de `senha inválida`. Para que o saldo seja retornado, a senha  
+formato `Saldo: R$ 123,45` ou a mensagem de `senha inválida`. Para que o saldo seja retornado, a senha  
 passada como argumento deve ser exatamente a mesma cadastrada para o cliente.
 
 A classe deverá exigir que dois métodos sejam implementados em subclasses que possa estendê-la.  
