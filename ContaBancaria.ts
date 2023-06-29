@@ -1,6 +1,6 @@
 import { Cliente } from "./Cliente"
 
-type TContaBancaria = {
+export type TContaBancaria = {
     saldo: number
     numero: number
     agencia: number
@@ -38,8 +38,8 @@ export abstract class ContaBacaria {
         return `Saldo: R$ ${valor.toFixed(2).replace('.', ',')}`;
     }
 
-    abstract depositar(): string;
+    abstract depositar(valor: number): string;
 
-    abstract sacar(): string;
+    abstract sacar(senha: number, valor: number): string;
 
 }
