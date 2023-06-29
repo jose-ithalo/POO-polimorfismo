@@ -49,7 +49,7 @@ Ambas terão o saldo retornado da seguinte forma: `Saldo: R$ 123,45`
 3 - Implemente uma classe `ContaCorrente` que herda as características e funcionalidades da classe  
 `ContaBancaria`, com as seguintes particularidades:
 
-Deverá existir um atributo chamado `limite` que deverá receber um valor de `R$ 100,00` convertidos para  
+Deverá existir um atributo chamado `limite` que deverá receber um valor de `R$ 1000,00` convertidos para  
 centavos, ao criar um objeto. Esse atributo deverá ser exclusivo da classe `ContaCorrente` e não poderá ser  
 acessado publicamente.
 
