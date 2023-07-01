@@ -65,3 +65,34 @@ b) o método `sacar` deverá seguir as seguintes obrigatoriedades:
   limite com o saldo do cliente.
 - Subtrair o valor recebido como argumento do saldo do usuário, caso as regras anteriores estejam  
   validadas e retornar o saldo conforme solicitado anteriormente.
+
+4 - Implemente uma classe `ContaPoupanca` que herda as características e funcionalidades da classe  
+`ContaBancaria`, com as seguintes particularidades:
+
+Deverá existir um atributo chamado `taxaRendimento` que deverá receber um valor de `0.05` que representará  
+5% da taxa de rendimento, ao criar um objeto. Esse atributo deverá ser exclusivo da classe `ContaPoupanca`  
+e não poderá ser acessado publicamente.
+
+Deverá implementar os métodos obrigatórios da superclasse, seguindo as seguintes regras:
+
+a) o método `depositar` deverá incrementar o valor recebido como argumento ao saldo do cliente, acrescido  
+do valor da taxa de rendimento com base no valor depositado e retornar o saldo conforme solicitado  
+anteriormente.
+
+b) o método `sacar` deverá ser implementado conforme a classe `ContaCorrente`, com execeção do limite  
+que não existirá na classe `ContaPoupanca`.
+
+**Testes do sistema**
+
+Crie ao menos dois clientes e cadastre uma conta bancária para cada um deles, sendo uma poupança e uma  
+corrente.
+
+Faça operações de saques e depositos em cada uma das contas para testar a implementação.
+
+Não é necessário transpilar o código.
+
+Faça o teste com outros exemplos.
+
+Faça o commit dos resultado.
+
+---
